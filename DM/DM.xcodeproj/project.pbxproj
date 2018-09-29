@@ -13,6 +13,7 @@
 		C44D3644215F36B300A38893 /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C44D3642215F36B300A38893 /* DM.xcdatamodeld */; };
 		C44D3646215F36B300A38893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44D3645215F36B300A38893 /* Assets.xcassets */; };
 		C44D3649215F36B300A38893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D3647215F36B300A38893 /* LaunchScreen.storyboard */; };
+		C44D3652215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C44D3651215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C44D3645215F36B300A38893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44D3648215F36B300A38893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44D364A215F36B300A38893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44D3651215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DARK MATTER ROBOTICS.jpg"; path = "../../../../../Downloads/DARK MATTER ROBOTICS.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				C44D3647215F36B300A38893 /* LaunchScreen.storyboard */,
 				C44D364A215F36B300A38893 /* Info.plist */,
 				C44D3642215F36B300A38893 /* DM.xcdatamodeld */,
+				C44D3650215F3D0300A38893 /* Files */,
 			);
 			path = DM;
+			sourceTree = "<group>";
+		};
+		C44D3650215F3D0300A38893 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C44D3651215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 				C44D3649215F36B300A38893 /* LaunchScreen.storyboard in Resources */,
 				C44D3646215F36B300A38893 /* Assets.xcassets in Resources */,
 				C44D3641215F36B300A38893 /* Main.storyboard in Resources */,
+				C44D3652215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
