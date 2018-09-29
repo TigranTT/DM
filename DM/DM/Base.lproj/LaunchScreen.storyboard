@@ -24,17 +24,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.13330614566802979" green="0.12150321155786514" blue="0.12549039721488953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3HJ-fo-bRk"/>
-                            <constraint firstAttribute="trailing" secondItem="qCz-fS-Na8" secondAttribute="trailing" id="Nkh-MN-Lxf"/>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TIL-jA-lqu"/>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fWF-qy-Qs1"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4Wv-KF-Rkt"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8dI-AK-ibj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qCz-fS-Na8" secondAttribute="trailing" id="QhE-Px-Ydq"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jYI-Ou-6NW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
