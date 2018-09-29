@@ -17,17 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DARK MATTER ROBOTICS.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-fS-Na8">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark_Matter_sf.png" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-fS-Na8">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <color key="backgroundColor" red="0.13330614566802979" green="0.12150321155786514" blue="0.12549039721488953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.13330614566802979" green="0.12150321155786514" blue="0.12549039721488953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4Wv-KF-Rkt"/>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8dI-AK-ibj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qCz-fS-Na8" secondAttribute="trailing" id="QhE-Px-Ydq"/>
-                            <constraint firstItem="qCz-fS-Na8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jYI-Ou-6NW"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EzP-ZO-KL3"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Q83-xF-KSr"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YK6-kJ-Thm"/>
+                            <constraint firstItem="qCz-fS-Na8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="jmU-l4-ecq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qCz-fS-Na8" secondAttribute="trailing" id="x3D-D1-R3N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DARK MATTER ROBOTICS.jpg" width="4034" height="2874"/>
+        <image name="Dark_Matter_sf.png" width="1777" height="1361"/>
     </resources>
 </document>
