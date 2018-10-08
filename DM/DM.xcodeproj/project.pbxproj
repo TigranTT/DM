@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C4410277215F6810001C8CE2 /* Dark_Matter_sf.png in Resources */ = {isa = PBXBuildFile; fileRef = C4410276215F6810001C8CE2 /* Dark_Matter_sf.png */; };
+		C441027A216AEF12001C8CE2 /* ButtonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */; };
+		C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027B216AEF66001C8CE2 /* BounceButton.swift */; };
+		C441027E216AEF94001C8CE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */; };
+		C4410280216AF04C001C8CE2 /* RegionViewExtenison.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */; };
+		C4410283216AF08C001C8CE2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410282216AF08C001C8CE2 /* Reachability.swift */; };
+		C441028B216AFC9B001C8CE2 /* ethnocentric rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */; };
+		C441028C216AFC9B001C8CE2 /* ethnocentric rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */; };
 		C44D363C215F36B300A38893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D363B215F36B300A38893 /* AppDelegate.swift */; };
-		C44D363E215F36B300A38893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D363D215F36B300A38893 /* ViewController.swift */; };
+		C44D363E215F36B300A38893 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D363D215F36B300A38893 /* HomeVC.swift */; };
 		C44D3641215F36B300A38893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D363F215F36B300A38893 /* Main.storyboard */; };
 		C44D3644215F36B300A38893 /* DM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C44D3642215F36B300A38893 /* DM.xcdatamodeld */; };
 		C44D3646215F36B300A38893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44D3645215F36B300A38893 /* Assets.xcassets */; };
@@ -19,9 +26,16 @@
 
 /* Begin PBXFileReference section */
 		C4410276215F6810001C8CE2 /* Dark_Matter_sf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Matter_sf.png; path = ../../../../../Downloads/Dark_Matter_sf.png; sourceTree = "<group>"; };
+		C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsExtension.swift; sourceTree = "<group>"; };
+		C441027B216AEF66001C8CE2 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewExtenison.swift; sourceTree = "<group>"; };
+		C4410282216AF08C001C8CE2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg.ttf"; sourceTree = "<group>"; };
+		C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg it.ttf"; sourceTree = "<group>"; };
 		C44D3638215F36B300A38893 /* DM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44D363B215F36B300A38893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C44D363D215F36B300A38893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C44D363D215F36B300A38893 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C44D3640215F36B300A38893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C44D3643215F36B300A38893 /* DM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DM.xcdatamodel; sourceTree = "<group>"; };
 		C44D3645215F36B300A38893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +55,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4410278216AEED2001C8CE2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */,
+				C441027B216AEF66001C8CE2 /* BounceButton.swift */,
+				C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */,
+				C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C4410281216AF067001C8CE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C44D363B215F36B300A38893 /* AppDelegate.swift */,
+				C4410282216AF08C001C8CE2 /* Reachability.swift */,
+				C44D3642215F36B300A38893 /* DM.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4410284216AF0BA001C8CE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C44D3647215F36B300A38893 /* LaunchScreen.storyboard */,
+				C44D363F215F36B300A38893 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4410285216AF0C5001C8CE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C44D363D215F36B300A38893 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C44D362F215F36B300A38893 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +112,12 @@
 		C44D363A215F36B300A38893 /* DM */ = {
 			isa = PBXGroup;
 			children = (
-				C44D363B215F36B300A38893 /* AppDelegate.swift */,
-				C44D363D215F36B300A38893 /* ViewController.swift */,
-				C44D363F215F36B300A38893 /* Main.storyboard */,
-				C44D3645215F36B300A38893 /* Assets.xcassets */,
-				C44D3647215F36B300A38893 /* LaunchScreen.storyboard */,
-				C44D364A215F36B300A38893 /* Info.plist */,
-				C44D3642215F36B300A38893 /* DM.xcdatamodeld */,
+				C4410281216AF067001C8CE2 /* Model */,
+				C4410284216AF0BA001C8CE2 /* View */,
+				C4410285216AF0C5001C8CE2 /* Controller */,
+				C4410278216AEED2001C8CE2 /* Extension */,
 				C44D3650215F3D0300A38893 /* Files */,
+				C44D364A215F36B300A38893 /* Info.plist */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -75,6 +125,9 @@
 		C44D3650215F3D0300A38893 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */,
+				C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */,
+				C44D3645215F36B300A38893 /* Assets.xcassets */,
 				C4410276215F6810001C8CE2 /* Dark_Matter_sf.png */,
 				C44D3651215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg */,
 			);
@@ -144,6 +197,8 @@
 				C44D3641215F36B300A38893 /* Main.storyboard in Resources */,
 				C4410277215F6810001C8CE2 /* Dark_Matter_sf.png in Resources */,
 				C44D3652215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg in Resources */,
+				C441028C216AFC9B001C8CE2 /* ethnocentric rg it.ttf in Resources */,
+				C441028B216AFC9B001C8CE2 /* ethnocentric rg.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44D363E215F36B300A38893 /* ViewController.swift in Sources */,
+				C4410280216AF04C001C8CE2 /* RegionViewExtenison.swift in Sources */,
+				C44D363E215F36B300A38893 /* HomeVC.swift in Sources */,
+				C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */,
+				C441027A216AEF12001C8CE2 /* ButtonsExtension.swift in Sources */,
 				C44D3644215F36B300A38893 /* DM.xcdatamodeld in Sources */,
+				C441027E216AEF94001C8CE2 /* UIViewExtensions.swift in Sources */,
+				C4410283216AF08C001C8CE2 /* Reachability.swift in Sources */,
 				C44D363C215F36B300A38893 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
