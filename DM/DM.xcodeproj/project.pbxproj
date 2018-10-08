@@ -15,6 +15,10 @@
 		C4410283216AF08C001C8CE2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410282216AF08C001C8CE2 /* Reachability.swift */; };
 		C441028B216AFC9B001C8CE2 /* ethnocentric rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */; };
 		C441028C216AFC9B001C8CE2 /* ethnocentric rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */; };
+		C441028E216B13CA001C8CE2 /* Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C441028D216B13C9001C8CE2 /* Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg */; };
+		C4410290216B13D3001C8CE2 /* NTCC-picture-1024x683.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C441028F216B13D3001C8CE2 /* NTCC-picture-1024x683.jpg */; };
+		C4410294216B2BDD001C8CE2 /* Purple-Galaxy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4410293216B2BDC001C8CE2 /* Purple-Galaxy.jpg */; };
+		C4410296216B32A3001C8CE2 /* www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4410295216B32A2001C8CE2 /* www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg */; };
 		C44D363C215F36B300A38893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D363B215F36B300A38893 /* AppDelegate.swift */; };
 		C44D363E215F36B300A38893 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44D363D215F36B300A38893 /* HomeVC.swift */; };
 		C44D3641215F36B300A38893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44D363F215F36B300A38893 /* Main.storyboard */; };
@@ -33,6 +37,10 @@
 		C4410282216AF08C001C8CE2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg.ttf"; sourceTree = "<group>"; };
 		C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg it.ttf"; sourceTree = "<group>"; };
+		C441028D216B13C9001C8CE2 /* Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg"; sourceTree = "<group>"; };
+		C441028F216B13D3001C8CE2 /* NTCC-picture-1024x683.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "NTCC-picture-1024x683.jpg"; sourceTree = "<group>"; };
+		C4410293216B2BDC001C8CE2 /* Purple-Galaxy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Purple-Galaxy.jpg"; sourceTree = "<group>"; };
+		C4410295216B32A2001C8CE2 /* www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg; sourceTree = "<group>"; };
 		C44D3638215F36B300A38893 /* DM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44D363B215F36B300A38893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44D363D215F36B300A38893 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -125,6 +133,10 @@
 		C44D3650215F3D0300A38893 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4410295216B32A2001C8CE2 /* www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg */,
+				C4410293216B2BDC001C8CE2 /* Purple-Galaxy.jpg */,
+				C441028F216B13D3001C8CE2 /* NTCC-picture-1024x683.jpg */,
+				C441028D216B13C9001C8CE2 /* Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg */,
 				C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */,
 				C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */,
 				C44D3645215F36B300A38893 /* Assets.xcassets */,
@@ -193,9 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44D3649215F36B300A38893 /* LaunchScreen.storyboard in Resources */,
+				C4410296216B32A3001C8CE2 /* www.GetBg.net_Space_Blue_planet_on_a_pink_background_galaxy_098768_.jpg in Resources */,
 				C44D3646215F36B300A38893 /* Assets.xcassets in Resources */,
+				C4410290216B13D3001C8CE2 /* NTCC-picture-1024x683.jpg in Resources */,
 				C44D3641215F36B300A38893 /* Main.storyboard in Resources */,
+				C4410294216B2BDD001C8CE2 /* Purple-Galaxy.jpg in Resources */,
 				C4410277215F6810001C8CE2 /* Dark_Matter_sf.png in Resources */,
+				C441028E216B13CA001C8CE2 /* Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg in Resources */,
 				C44D3652215F3D2300A38893 /* DARK MATTER ROBOTICS.jpg in Resources */,
 				C441028C216AFC9B001C8CE2 /* ethnocentric rg it.ttf in Resources */,
 				C441028B216AFC9B001C8CE2 /* ethnocentric rg.ttf in Resources */,

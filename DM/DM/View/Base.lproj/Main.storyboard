@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cep-mP-SGd">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,32 +14,108 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="DM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-bZ-HJM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple-Galaxy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="crW-bR-cSu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </imageView>
+                            <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-bZ-HJM">
+                                <rect key="frame" x="16" y="88" width="343" height="690"/>
+                                <subviews>
+                                    <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, we’re team Dark Matter 14374" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdj-3l-VBY">
+                                        <rect key="frame" x="0.0" y="12.999999999999998" width="343" height="24.333333333333329"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-1" height="-1"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Ls-Ri-UNi">
+                                        <rect key="frame" x="0.0" y="42.333333333333343" width="343" height="250.00000000000003"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="0YP-I9-lv3">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="500"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-Dp-p6D">
+                                        <rect key="frame" x="0.0" y="312.33333333333331" width="343" height="135"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="135" id="wZb-iE-FhQ"/>
+                                        </constraints>
+                                        <string key="text">Dark Matter 14374 is a community-based, junior high robotics team in Southeast Louisiana based at the Northshore Community Technical College in Lacombe. We are a competitive team within FIRST – the founding organization of FTC that advocates for STEM (Science, Technology, Engineering, and Math) and promotes Gracious Professionalism®.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        </variation>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NTCC-picture-1024x683.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qzT-jg-XSQ">
+                                        <rect key="frame" x="0.0" y="447.33333333333337" width="343" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="x2G-80-Vmg">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="410"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="410"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cy7-Dp-p6D" firstAttribute="trailing" secondItem="qzT-jg-XSQ" secondAttribute="trailing" id="7ye-Wd-SgT"/>
+                                    <constraint firstItem="sdj-3l-VBY" firstAttribute="leading" secondItem="2Ls-Ri-UNi" secondAttribute="leading" id="84J-AD-k1e"/>
+                                    <constraint firstItem="sdj-3l-VBY" firstAttribute="leading" secondItem="vf6-bZ-HJM" secondAttribute="leading" id="DQ9-ms-xNc"/>
+                                    <constraint firstItem="2Ls-Ri-UNi" firstAttribute="leading" secondItem="cy7-Dp-p6D" secondAttribute="leading" id="McE-0w-oBc"/>
+                                    <constraint firstAttribute="trailing" secondItem="sdj-3l-VBY" secondAttribute="trailing" id="SEm-k0-Lbd"/>
+                                    <constraint firstItem="sdj-3l-VBY" firstAttribute="top" secondItem="vf6-bZ-HJM" secondAttribute="top" constant="13" id="Vo6-4v-Ay7"/>
+                                    <constraint firstItem="2Ls-Ri-UNi" firstAttribute="trailing" secondItem="cy7-Dp-p6D" secondAttribute="trailing" id="X9J-qe-TR7"/>
+                                    <constraint firstItem="sdj-3l-VBY" firstAttribute="trailing" secondItem="2Ls-Ri-UNi" secondAttribute="trailing" id="Y2d-8n-F82"/>
+                                    <constraint firstItem="cy7-Dp-p6D" firstAttribute="top" secondItem="2Ls-Ri-UNi" secondAttribute="bottom" constant="20" id="d2k-nP-Q2L"/>
+                                    <constraint firstItem="sdj-3l-VBY" firstAttribute="centerX" secondItem="vf6-bZ-HJM" secondAttribute="centerX" id="ifs-IS-n9A"/>
+                                    <constraint firstItem="cy7-Dp-p6D" firstAttribute="leading" secondItem="qzT-jg-XSQ" secondAttribute="leading" id="ldr-CZ-HHb"/>
+                                    <constraint firstItem="2Ls-Ri-UNi" firstAttribute="top" secondItem="sdj-3l-VBY" secondAttribute="bottom" constant="5" id="qc3-fn-o8Z"/>
+                                    <constraint firstItem="qzT-jg-XSQ" firstAttribute="top" secondItem="cy7-Dp-p6D" secondAttribute="bottom" id="rSJ-cT-y2Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="qzT-jg-XSQ" secondAttribute="bottom" constant="2" id="uoO-Bw-OUH"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5VP-Fl-hAO"/>
-                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NOt-Cl-mfP"/>
-                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TlP-Yb-Fu2"/>
-                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bcQ-vv-dF5"/>
+                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4KZ-Yh-Lzf"/>
+                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4ly-Tc-5Bd"/>
+                            <constraint firstItem="crW-bR-cSu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6MX-IZ-NWF"/>
+                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygm-3X-4Ol"/>
+                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZJO-ot-utc"/>
+                            <constraint firstItem="vf6-bZ-HJM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZcT-Dg-z6m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="crW-bR-cSu" secondAttribute="bottom" id="mVX-DI-uNu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="crW-bR-cSu" secondAttribute="trailing" id="pCR-x5-oDl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="DARK MATTER" id="fG9-wN-2sR">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="jsc-bz-cfX">
+                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="jsc-bz-cfX">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="Menu" landscapeImage="Menu" largeContentSizeImage="Menu" springLoaded="YES" id="hTI-J1-y1c">
+                            <barButtonItem title="Menu" image="Menu" landscapeImage="Menu" largeContentSizeImage="Menu" springLoaded="YES" id="hTI-J1-y1c">
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="Schedule" landscapeImage="Schedule" largeContentSizeImage="Schedule" springLoaded="YES" id="ex3-ta-xhC">
+                            <barButtonItem title="Schedule" image="Schedule" landscapeImage="Schedule" largeContentSizeImage="Schedule" springLoaded="YES" id="ex3-ta-xhC">
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -47,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245.59999999999999" y="106.59670164917542"/>
+            <point key="canvasLocation" x="245.50781249999997" y="106.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OQv-D8-iuX">
@@ -55,10 +131,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cep-mP-SGd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="315-cg-9nN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="EthnocentricRg-Regular" family="Ethnocentric" pointSize="17"/>
                             <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,8 +157,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="32" height="32"/>
+        <image name="Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg" width="3565" height="2927"/>
+        <image name="Home" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
-        <image name="Schedule" width="32" height="32"/>
+        <image name="NTCC-picture-1024x683.jpg" width="1024" height="683"/>
+        <image name="Purple-Galaxy.jpg" width="2560" height="1600"/>
+        <image name="Schedule" width="40" height="40"/>
     </resources>
 </document>
