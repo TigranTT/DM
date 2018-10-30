@@ -102,7 +102,7 @@
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygm-3X-4Ol"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZJO-ot-utc"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZcT-Dg-z6m"/>
-                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eQz-5e-vGD"/>
+                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eQz-5e-vGD"/>
                             <constraint firstAttribute="bottom" secondItem="crW-bR-cSu" secondAttribute="bottom" id="mVX-DI-uNu"/>
                             <constraint firstAttribute="trailing" secondItem="crW-bR-cSu" secondAttribute="trailing" id="pCR-x5-oDl"/>
                         </constraints>
@@ -126,6 +126,7 @@
                         <outlet property="eventButton" destination="ex3-ta-xhC" id="xf8-lH-2S8"/>
                         <outlet property="menuButton" destination="hTI-J1-y1c" id="RPk-Fk-nzd"/>
                         <segue destination="iuG-l1-2pD" kind="show" identifier="segueToWebVC" id="PAz-P8-80Q"/>
+                        <segue destination="rGN-mU-gQk" kind="show" identifier="segueToTextVC" id="EXm-ZS-Dvm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -210,6 +211,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxs-Cj-FaH" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1028" y="105.66502463054188"/>
+        </scene>
+        <!--TextVC-->
+        <scene sceneID="A0K-Am-3J7">
+            <objects>
+                <viewController id="rGN-mU-gQk" userLabel="TextVC" customClass="TextVC" customModule="DM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isA-us-d2p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple-Galaxy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-oT-dac">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4QF-PX-Xna">
+                                <rect key="frame" x="5" y="88" width="365" height="724"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.61499357876712324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Hi, we’re team Dark Matter 14374.
+We are a community-based junior high robotics team based at Northshore Technical Community College (special thanks to them). We will compete in the FIRST Tech Challenge (FTC). FIRST is the founding organization of FTC that encourages STEM (Science, Technology, Engineering, and Math) and Gracious Professionalism.
+
+Team History
+In 2015, Mandeville Junior High School transitioned a FIRST Lego League (FLL) team called Purple Phyre into a FIRST Tech Challenge (FTC) team called Dark Matter 10337. Dark Matter emerged as a strong team from the very beginning, winning multiple awards within Louisiana with their first robot named K-9000.
+During Dark Matter’s second season, robot BB-9 was created and the team’s success continued. Achievements in the 2016-2017 season included being the First Alliance Captain at two local qualifiers and the Louisiana Regional Championship, and winning the Inspire Award twice. The Inspire Award is given to teams who exemplify the FIRST philosophy and inspire other teams both on and off the field. Attending the South Super Regional Championship, they were Pemberton Division Finalists, and at the Houston World Championships, Dark Matter ranked ninth in the Jemison Division.
+
+In its unforgettable 2017-2018 season, Dark Matter 10337 built Johnny-9 and went undefeated through the New Orleans Area Qualifier, the Northshore Qualifier, and the Louisiana Regional Championship. They also received the Inspire Award twice. At the South Super Regional Championship they competed in the elimination matches and received the Control Award, an award given to teams that demonstrate proficient creation and documentation of programming. The team advanced to the Houston World Championship where they received the Judge’s Award for their unique performance and their Gracious Professionalism shown to other teams and the FIRST community. They ranked 11th in OPR (Offensive Power Ranking) out of 5900 FTC teams worldwide.
+
+In the midst of this eventful season, Dark Matter encountered a major obstacle. Both coaches announced they would be resigning their coaching positions at the end of the season due to pressing family obligations. Despite many concerted efforts, another coach from within Mandeville Junior High couldn’t be found. Thus, in order to preserve a FTC team, a community team was formed. During the transfer from a school-based team to a community team, Dark Matter lost its team number, build/practice location, equipment, social media accounts, etc. However, thanks to the hard work of the remaining parents, students, mentors, and new mentors and community partners, Dark Matter has started anew. The Dark Matter name and spirit have carried over and we now have a new FTC #, this new website, and new social media accounts.
+
+The Northshore Technical Community College in Lacombe, Louisiana has very generously provided space for build/practice activities, and mentorship from some of its faculty. We have started to fundraise for new equipment and we also are currently looking to recruit a new coach. Make sure to sign up for the Dark Matter newsletter to stay up to date with the latest news! This is a dynamic, exciting chapter in Dark Matter’s history. While we have started this season with many challenges, we are fortunate to have the support of the local FIRST and STEM communities to get us off to a great start!</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4QF-PX-Xna" firstAttribute="trailing" secondItem="isA-us-d2p" secondAttribute="trailing" constant="-5" id="5f0-pF-H5O">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-15"/>
+                            </constraint>
+                            <constraint firstItem="X1a-oT-dac" firstAttribute="leading" secondItem="isA-us-d2p" secondAttribute="leading" id="68V-b1-Xru"/>
+                            <constraint firstAttribute="top" secondItem="X1a-oT-dac" secondAttribute="top" id="LbX-hE-QA6"/>
+                            <constraint firstAttribute="trailing" secondItem="X1a-oT-dac" secondAttribute="trailing" id="TBm-Lg-uRh"/>
+                            <constraint firstItem="4QF-PX-Xna" firstAttribute="top" secondItem="sad-nQ-Ze5" secondAttribute="top" id="eBJ-oi-52l"/>
+                            <constraint firstItem="X1a-oT-dac" firstAttribute="bottom" secondItem="isA-us-d2p" secondAttribute="bottom" id="w62-Wd-qtZ"/>
+                            <constraint firstItem="4QF-PX-Xna" firstAttribute="leading" secondItem="isA-us-d2p" secondAttribute="leading" constant="5" id="yXH-x3-dSs">
+                                <variation key="heightClass=compact-widthClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="4QF-PX-Xna" secondAttribute="bottom" id="zgO-eV-2gU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sad-nQ-Ze5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DARK MATTER" id="KhF-6D-mg7">
+                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="XaE-YR-z6s">
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="homeButtonPressed:" destination="rGN-mU-gQk" id="gch-GQ-2nt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="4QF-PX-Xna" id="QhU-VP-31o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNd-AV-PLK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="106.40394088669952"/>
         </scene>
     </scenes>
     <resources>

@@ -16,11 +16,11 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
     @IBOutlet weak var homeButton: UIBarButtonItem!
     
     var urlAddress = URL(string: "html link")
-    
+    var navigationTitle = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
+        navigationItem.title = navigationTitle
         activityIndicator.startAnimating()
         webView.navigationDelegate = self
         let request = URLRequest(url: urlAddress!)

@@ -14,7 +14,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var eventButton: UIBarButtonItem!
     
     var urlString = ""
-    
+    var textString = ""
+    var navigationTitle = ""
     
 
     override func viewDidLoad() {
@@ -24,13 +25,15 @@ class HomeVC: UIViewController {
     
     
     @IBAction func menuButtonPressed(_ sender: Any) {
+        navigationTitle = "About FIRST"
         urlString = "https://www.firstinspires.org"
         performSegue(withIdentifier: "segueToWebVC", sender: view)
     }
     
     @IBAction func eventButtonPressed(_ sender: Any) {
-        urlString = "https://www.yahoo.com"
-        performSegue(withIdentifier: "segueToWebVC", sender: view)
+        navigationTitle = "About us"
+        textString = "https://www.yahoo.com"
+        performSegue(withIdentifier: "segueToTextVC", sender: view)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,6 +42,10 @@ class HomeVC: UIViewController {
             guard let url = URL(string: urlString)
                 else{return}
             webVC.urlAddress = url
+            webVC.navigationTitle = navigationTitle
+        } else if segue.identifier == "segueToTextVC" {
+            let webVC = segue.destination as! TextVC
+            webVC.navigationTitle = navigationTitle
         }
     }
     
