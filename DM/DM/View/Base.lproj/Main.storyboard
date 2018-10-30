@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DARK MATTER-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="DM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="HomeVC" customClass="HomeVC" customModule="DM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Purple-Galaxy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="crW-bR-cSu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-bZ-HJM">
                                 <rect key="frame" x="16" y="88" width="343" height="690"/>
@@ -96,30 +96,37 @@
                         </subviews>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4KZ-Yh-Lzf"/>
+                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4KZ-Yh-Lzf"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4ly-Tc-5Bd"/>
                             <constraint firstItem="crW-bR-cSu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6MX-IZ-NWF"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygm-3X-4Ol"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZJO-ot-utc"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZcT-Dg-z6m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="crW-bR-cSu" secondAttribute="bottom" id="mVX-DI-uNu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="crW-bR-cSu" secondAttribute="trailing" id="pCR-x5-oDl"/>
+                            <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eQz-5e-vGD"/>
+                            <constraint firstAttribute="bottom" secondItem="crW-bR-cSu" secondAttribute="bottom" id="mVX-DI-uNu"/>
+                            <constraint firstAttribute="trailing" secondItem="crW-bR-cSu" secondAttribute="trailing" id="pCR-x5-oDl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="DARK MATTER" id="fG9-wN-2sR">
-                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="jsc-bz-cfX">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="Menu" landscapeImage="Menu" largeContentSizeImage="Menu" springLoaded="YES" id="hTI-J1-y1c">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="7VX-fA-h32"/>
+                            </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Menu" image="Menu" landscapeImage="Menu" largeContentSizeImage="Menu" springLoaded="YES" id="hTI-J1-y1c">
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                            <barButtonItem title="Schedule" image="Schedule" landscapeImage="Schedule" largeContentSizeImage="Schedule" springLoaded="YES" id="ex3-ta-xhC">
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Schedule" image="Schedule" landscapeImage="Schedule" largeContentSizeImage="Schedule" springLoaded="YES" id="ex3-ta-xhC">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="eventButtonPressed:" destination="BYZ-38-t0r" id="OCg-EA-lFQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="eventButton" destination="ex3-ta-xhC" id="xf8-lH-2S8"/>
+                        <outlet property="menuButton" destination="hTI-J1-y1c" id="RPk-Fk-nzd"/>
+                        <segue destination="iuG-l1-2pD" kind="show" identifier="segueToWebVC" id="PAz-P8-80Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +135,7 @@
         <!--Navigation Controller-->
         <scene sceneID="OQv-D8-iuX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cep-mP-SGd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cep-mP-SGd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="315-cg-9nN">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -154,6 +161,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bn2-Oz-Men" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-567.20000000000005" y="107.49625187406298"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="qfw-6j-Jkz">
+            <objects>
+                <viewController id="iuG-l1-2pD" userLabel="WebVC" customClass="WebVC" customModule="DM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2zU-bm-6Zd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeL-6z-NAn">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qOL-Zy-OyD">
+                                <rect key="frame" x="177.66666666666666" y="396" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xeL-6z-NAn" firstAttribute="trailing" secondItem="2zU-bm-6Zd" secondAttribute="trailing" id="BK7-C2-kTF"/>
+                            <constraint firstItem="qOL-Zy-OyD" firstAttribute="centerY" secondItem="2zU-bm-6Zd" secondAttribute="centerY" id="Bdc-lz-8tf"/>
+                            <constraint firstItem="xeL-6z-NAn" firstAttribute="top" secondItem="Pbp-AY-PfN" secondAttribute="top" id="GEP-gl-Dvw"/>
+                            <constraint firstItem="xeL-6z-NAn" firstAttribute="bottom" secondItem="2zU-bm-6Zd" secondAttribute="bottom" id="M3T-S4-KCi"/>
+                            <constraint firstItem="qOL-Zy-OyD" firstAttribute="centerX" secondItem="2zU-bm-6Zd" secondAttribute="centerX" id="NrJ-Wb-xhL"/>
+                            <constraint firstItem="xeL-6z-NAn" firstAttribute="leading" secondItem="2zU-bm-6Zd" secondAttribute="leading" id="yhN-mT-oyX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pbp-AY-PfN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DARK MATTER" id="Yyv-jP-p8g">
+                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="ScQ-y9-V73">
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="homeButtonPressed:" destination="iuG-l1-2pD" id="9zy-EC-rvc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="qOL-Zy-OyD" id="DfL-h8-WqN"/>
+                        <outlet property="homeButton" destination="ScQ-y9-V73" id="PLC-9k-5gA"/>
+                        <outlet property="webView" destination="xeL-6z-NAn" id="l8x-O9-A4y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yxs-Cj-FaH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="105.66502463054188"/>
         </scene>
     </scenes>
     <resources>

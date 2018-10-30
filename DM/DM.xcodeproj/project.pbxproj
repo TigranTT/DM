@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40A6E5C2188054200B8D747 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A6E5B2188054200B8D747 /* WebVC.swift */; };
 		C4410277215F6810001C8CE2 /* Dark_Matter_sf.png in Resources */ = {isa = PBXBuildFile; fileRef = C4410276215F6810001C8CE2 /* Dark_Matter_sf.png */; };
 		C441027A216AEF12001C8CE2 /* ButtonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */; };
 		C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027B216AEF66001C8CE2 /* BounceButton.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40A6E5B2188054200B8D747 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		C4410276215F6810001C8CE2 /* Dark_Matter_sf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Matter_sf.png; path = ../../../../../Downloads/Dark_Matter_sf.png; sourceTree = "<group>"; };
 		C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsExtension.swift; sourceTree = "<group>"; };
 		C441027B216AEF66001C8CE2 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C44D363D215F36B300A38893 /* HomeVC.swift */,
+				C40A6E5B2188054200B8D747 /* WebVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40A6E5C2188054200B8D747 /* WebVC.swift in Sources */,
 				C4410280216AF04C001C8CE2 /* RegionViewExtenison.swift in Sources */,
 				C44D363E215F36B300A38893 /* HomeVC.swift in Sources */,
 				C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */,
