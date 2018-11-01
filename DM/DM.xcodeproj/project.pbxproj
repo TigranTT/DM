@@ -13,7 +13,7 @@
 		C441027A216AEF12001C8CE2 /* ButtonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */; };
 		C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027B216AEF66001C8CE2 /* BounceButton.swift */; };
 		C441027E216AEF94001C8CE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */; };
-		C4410280216AF04C001C8CE2 /* RegionViewExtenison.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */; };
+		C4410280216AF04C001C8CE2 /* MenuViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441027F216AF04C001C8CE2 /* MenuViewExtension.swift */; };
 		C4410283216AF08C001C8CE2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4410282216AF08C001C8CE2 /* Reachability.swift */; };
 		C441028B216AFC9B001C8CE2 /* ethnocentric rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */; };
 		C441028C216AFC9B001C8CE2 /* ethnocentric rg it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */; };
@@ -37,7 +37,7 @@
 		C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsExtension.swift; sourceTree = "<group>"; };
 		C441027B216AEF66001C8CE2 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewExtenison.swift; sourceTree = "<group>"; };
+		C441027F216AF04C001C8CE2 /* MenuViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewExtension.swift; sourceTree = "<group>"; };
 		C4410282216AF08C001C8CE2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C4410289216AFC9B001C8CE2 /* ethnocentric rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg.ttf"; sourceTree = "<group>"; };
 		C441028A216AFC9B001C8CE2 /* ethnocentric rg it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ethnocentric rg it.ttf"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				C4410279216AEF12001C8CE2 /* ButtonsExtension.swift */,
 				C441027B216AEF66001C8CE2 /* BounceButton.swift */,
 				C441027D216AEF94001C8CE2 /* UIViewExtensions.swift */,
-				C441027F216AF04C001C8CE2 /* RegionViewExtenison.swift */,
+				C441027F216AF04C001C8CE2 /* MenuViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40A6E5C2188054200B8D747 /* WebVC.swift in Sources */,
-				C4410280216AF04C001C8CE2 /* RegionViewExtenison.swift in Sources */,
+				C4410280216AF04C001C8CE2 /* MenuViewExtension.swift in Sources */,
 				C44D363E215F36B300A38893 /* HomeVC.swift in Sources */,
 				C441027C216AEF66001C8CE2 /* BounceButton.swift in Sources */,
 				C441027A216AEF12001C8CE2 /* ButtonsExtension.swift in Sources */,

@@ -12,14 +12,14 @@ class TextVC: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
-    var navigationTitle = ""
+    var navigationBarTitle = ""
     
 //    var text = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = navigationTitle
+        navigationItem.title = navigationBarTitle
 //        textView.text = text
         
     }

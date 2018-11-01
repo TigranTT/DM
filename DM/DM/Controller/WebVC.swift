@@ -8,19 +8,20 @@
 
 import UIKit
 import WebKit
+import PDFKit
 
 class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var homeButton: UIBarButtonItem!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     var urlAddress = URL(string: "html link")
-    var navigationTitle = ""
+    var navigationBarTitle = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = navigationTitle
+        navigationItem.title = navigationBarTitle
         activityIndicator.startAnimating()
         webView.navigationDelegate = self
         let request = URLRequest(url: urlAddress!)
@@ -28,6 +29,7 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
             self.showAlert("Error Message", message: "Please check internet connection")
         }else{
             webView.load(request)
+            //view.addSubview(pdfView)
         }
  
     }
@@ -40,10 +42,20 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
         activityIndicator.stopAnimating()
     }
     
-
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! UINavigationController
-        present(vc, animated: true, completion: nil)
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        guard let url = urlAddress else { return }
+        let pdfView = PDFView(frame: view.frame)
+        let pdfDocument = PDFDocument(url: url)
+        pdfView.document = pdfDocument
+        guard let data = pdfDocument!.dataRepresentation() else { return }
+        let activityController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
+        self.present(activityController, animated: true, completion: nil)
     }
+    
+
+//    @IBAction func homeButtonPressed(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! UINavigationController
+//        present(vc, animated: true, completion: nil)
+//    }
     
 }

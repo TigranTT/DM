@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cep-mP-SGd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cep-mP-SGd">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,15 +93,155 @@
                                     <constraint firstAttribute="bottom" secondItem="qzT-jg-XSQ" secondAttribute="bottom" constant="2" id="uoO-Bw-OUH"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-hF-IDD" userLabel="Menu View" customClass="MenuViewExtension" customModule="DM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="98" width="375" height="50"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXE-qf-6B1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h13-hv-SSz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="J17-eJ-KvS" userLabel="Region Buttons">
+                                                    <rect key="frame" x="4" y="11" width="367" height="28"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQe-xX-Qac" userLabel="About FIRST" customClass="BounceButton" customModule="DM" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="28"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <state key="normal" title="About FIRST">
+                                                                <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <connections>
+                                                                <action selector="aboutFirstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1SG-eN-gz2"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51n-HM-c23" customClass="BounceButton" customModule="DM" customModuleProvider="target">
+                                                            <rect key="frame" x="74.333333333333329" y="0.0" width="69.999999999999986" height="28"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <state key="normal" title="About Us">
+                                                                <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <connections>
+                                                                <action selector="aboutUsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slk-dh-g1h"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaE-FS-UxB" customClass="BounceButton" customModule="DM" customModuleProvider="target">
+                                                            <rect key="frame" x="148.33333333333334" y="0.0" width="70.333333333333343" height="28"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <state key="normal" title="Support Us">
+                                                                <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <connections>
+                                                                <action selector="supportUsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTZ-hI-oWj"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-Jy-pBn" customClass="BounceButton" customModule="DM" customModuleProvider="target">
+                                                            <rect key="frame" x="222.66666666666663" y="0.0" width="70" height="28"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <state key="normal" title="Our Sponsors">
+                                                                <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unp-H2-iP5" customClass="BounceButton" customModule="DM" customModuleProvider="target">
+                                                            <rect key="frame" x="296.66666666666669" y="0.0" width="70.333333333333314" height="28"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <state key="normal" title="Contact Us">
+                                                                <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            </variation>
+                                                        </button>
+                                                    </subviews>
+                                                    <variation key="heightClass=regular-widthClass=regular" spacing="8"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J17-eJ-KvS" firstAttribute="leading" secondItem="h13-hv-SSz" secondAttribute="leading" constant="4" id="20I-aO-QkD">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                                </constraint>
+                                                <constraint firstItem="J17-eJ-KvS" firstAttribute="centerY" secondItem="h13-hv-SSz" secondAttribute="centerY" id="7bh-yx-M64"/>
+                                                <constraint firstAttribute="trailing" secondItem="J17-eJ-KvS" secondAttribute="trailing" constant="4" id="nSA-8S-Wyi">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                                </constraint>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sXE-qf-6B1" firstAttribute="height" secondItem="lTA-hF-IDD" secondAttribute="height" id="1u0-ze-5MM"/>
+                                    <constraint firstAttribute="trailing" secondItem="sXE-qf-6B1" secondAttribute="trailing" id="3Me-12-OEJ"/>
+                                    <constraint firstItem="sXE-qf-6B1" firstAttribute="top" secondItem="lTA-hF-IDD" secondAttribute="top" id="McN-mQ-FaF"/>
+                                    <constraint firstAttribute="height" constant="50" id="RLb-gN-5k3">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                    <constraint firstItem="sXE-qf-6B1" firstAttribute="width" secondItem="lTA-hF-IDD" secondAttribute="width" id="fqy-BQ-OS2"/>
+                                    <constraint firstItem="sXE-qf-6B1" firstAttribute="leading" secondItem="lTA-hF-IDD" secondAttribute="leading" id="zRx-iC-ECA"/>
+                                    <constraint firstAttribute="bottom" secondItem="sXE-qf-6B1" secondAttribute="bottom" id="zrv-Dy-3cK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4KZ-Yh-Lzf"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4ly-Tc-5Bd"/>
                             <constraint firstItem="crW-bR-cSu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6MX-IZ-NWF"/>
+                            <constraint firstItem="lTA-hF-IDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Nvh-23-M2r"/>
+                            <constraint firstAttribute="trailing" secondItem="lTA-hF-IDD" secondAttribute="trailing" id="SCU-Dt-CY1"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ygm-3X-4Ol"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZJO-ot-utc"/>
                             <constraint firstItem="vf6-bZ-HJM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZcT-Dg-z6m"/>
+                            <constraint firstItem="lTA-hF-IDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a0I-P5-jdC"/>
                             <constraint firstItem="crW-bR-cSu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eQz-5e-vGD"/>
                             <constraint firstAttribute="bottom" secondItem="crW-bR-cSu" secondAttribute="bottom" id="mVX-DI-uNu"/>
                             <constraint firstAttribute="trailing" secondItem="crW-bR-cSu" secondAttribute="trailing" id="pCR-x5-oDl"/>
@@ -110,13 +250,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="DARK MATTER" id="fG9-wN-2sR">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="Menu" landscapeImage="Menu" largeContentSizeImage="Menu" springLoaded="YES" id="hTI-J1-y1c">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuButtonPressed:" destination="BYZ-38-t0r" id="7VX-fA-h32"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Schedule" image="Schedule" landscapeImage="Schedule" largeContentSizeImage="Schedule" springLoaded="YES" id="ex3-ta-xhC">
-                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="eventButtonPressed:" destination="BYZ-38-t0r" id="OCg-EA-lFQ"/>
                             </connections>
@@ -125,8 +265,9 @@
                     <connections>
                         <outlet property="eventButton" destination="ex3-ta-xhC" id="xf8-lH-2S8"/>
                         <outlet property="menuButton" destination="hTI-J1-y1c" id="RPk-Fk-nzd"/>
-                        <segue destination="iuG-l1-2pD" kind="show" identifier="segueToWebVC" id="PAz-P8-80Q"/>
-                        <segue destination="rGN-mU-gQk" kind="show" identifier="segueToTextVC" id="EXm-ZS-Dvm"/>
+                        <outlet property="menuView" destination="lTA-hF-IDD" id="BPy-VB-020"/>
+                        <segue destination="iuG-l1-2pD" kind="push" identifier="segueToWebVC" id="PAz-P8-80Q"/>
+                        <segue destination="rGN-mU-gQk" kind="push" identifier="segueToTextVC" id="EXm-ZS-Dvm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,16 +336,15 @@
                         <viewLayoutGuide key="safeArea" id="Pbp-AY-PfN"/>
                     </view>
                     <navigationItem key="navigationItem" title="DARK MATTER" id="Yyv-jP-p8g">
-                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="ScQ-y9-V73">
-                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="xRz-Bp-BOG">
                             <connections>
-                                <action selector="homeButtonPressed:" destination="iuG-l1-2pD" id="9zy-EC-rvc"/>
+                                <action selector="shareButtonPressed:" destination="iuG-l1-2pD" id="DSH-0x-aDj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="qOL-Zy-OyD" id="DfL-h8-WqN"/>
-                        <outlet property="homeButton" destination="ScQ-y9-V73" id="PLC-9k-5gA"/>
+                        <outlet property="shareButton" destination="xRz-Bp-BOG" id="sr0-3D-M8l"/>
                         <outlet property="webView" destination="xeL-6z-NAn" id="l8x-O9-A4y"/>
                     </connections>
                 </viewController>
@@ -227,7 +367,7 @@
                                 <rect key="frame" x="5" y="88" width="365" height="724"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.61499357876712324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Hi, we’re team Dark Matter 14374.
+                                <string key="text">Hi, we’re team Dark Matter 14374.
 We are a community-based junior high robotics team based at Northshore Technical Community College (special thanks to them). We will compete in the FIRST Tech Challenge (FTC). FIRST is the founding organization of FTC that encourages STEM (Science, Technology, Engineering, and Math) and Gracious Professionalism.
 
 Team History
@@ -238,7 +378,7 @@ In its unforgettable 2017-2018 season, Dark Matter 10337 built Johnny-9 and went
 
 In the midst of this eventful season, Dark Matter encountered a major obstacle. Both coaches announced they would be resigning their coaching positions at the end of the season due to pressing family obligations. Despite many concerted efforts, another coach from within Mandeville Junior High couldn’t be found. Thus, in order to preserve a FTC team, a community team was formed. During the transfer from a school-based team to a community team, Dark Matter lost its team number, build/practice location, equipment, social media accounts, etc. However, thanks to the hard work of the remaining parents, students, mentors, and new mentors and community partners, Dark Matter has started anew. The Dark Matter name and spirit have carried over and we now have a new FTC #, this new website, and new social media accounts.
 
-The Northshore Technical Community College in Lacombe, Louisiana has very generously provided space for build/practice activities, and mentorship from some of its faculty. We have started to fundraise for new equipment and we also are currently looking to recruit a new coach. Make sure to sign up for the Dark Matter newsletter to stay up to date with the latest news! This is a dynamic, exciting chapter in Dark Matter’s history. While we have started this season with many challenges, we are fortunate to have the support of the local FIRST and STEM communities to get us off to a great start!</mutableString>
+The Northshore Technical Community College in Lacombe, Louisiana has very generously provided space for build/practice activities, and mentorship from some of its faculty. We have started to fundraise for new equipment and we also are currently looking to recruit a new coach. Make sure to sign up for the Dark Matter newsletter to stay up to date with the latest news! This is a dynamic, exciting chapter in Dark Matter’s history. While we have started this season with many challenges, we are fortunate to have the support of the local FIRST and STEM communities to get us off to a great start!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -267,14 +407,7 @@ The Northshore Technical Community College in Lacombe, Louisiana has very genero
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sad-nQ-Ze5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="DARK MATTER" id="KhF-6D-mg7">
-                        <barButtonItem key="leftBarButtonItem" title="Home" image="Home" landscapeImage="Home" largeContentSizeImage="Home" springLoaded="YES" id="XaE-YR-z6s">
-                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="homeButtonPressed:" destination="rGN-mU-gQk" id="gch-GQ-2nt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="DARK MATTER" id="KhF-6D-mg7"/>
                     <connections>
                         <outlet property="textView" destination="4QF-PX-Xna" id="QhU-VP-31o"/>
                     </connections>
@@ -286,7 +419,6 @@ The Northshore Technical Community College in Lacombe, Louisiana has very genero
     </scenes>
     <resources>
         <image name="Dark-Matter-1st-team-pic-2018-2019-Season-Sept-8-2018-1-2.jpg" width="3565" height="2927"/>
-        <image name="Home" width="40" height="40"/>
         <image name="Menu" width="40" height="40"/>
         <image name="NTCC-picture-1024x683.jpg" width="1024" height="683"/>
         <image name="Purple-Galaxy.jpg" width="2560" height="1600"/>
