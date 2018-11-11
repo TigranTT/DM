@@ -15,12 +15,20 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var shareButton: UIBarButtonItem!
+    @IBOutlet weak var buttonDarkMatterForm: UIButton!
+    
     
     var urlAddress = URL(string: "html link")
     var navigationBarTitle = ""
+    var shareButtonIsEnabled = false
+    var darkMatterFormButtonIsHiiden = true
+    
+    var pathToSponsorhipFormPDF = Bundle.main.url(forResource: "SponsorshipForm", withExtension: "pdf")
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        shareButton.isEnabled = shareButtonIsEnabled
+        buttonDarkMatterForm.isHidden = darkMatterFormButtonIsHiiden
         navigationItem.title = navigationBarTitle
         activityIndicator.startAnimating()
         webView.navigationDelegate = self
@@ -42,7 +50,19 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
         activityIndicator.stopAnimating()
     }
     
+    @IBAction func darkMatterFormButtonPressed(_ sender: Any) {
+        guard let url = pathToSponsorhipFormPDF else { return }
+        let request = URLRequest(url: url)
+        urlAddress = url
+        webView.load(request)
+        shareButton.isEnabled = true
+        buttonDarkMatterForm.isHidden = true
+    }
+    
+
+    
     @IBAction func shareButtonPressed(_ sender: Any) {
+        shareButton.isEnabled = false
         guard let url = urlAddress else { return }
         let pdfView = PDFView(frame: view.frame)
         let pdfDocument = PDFDocument(url: url)
@@ -50,6 +70,7 @@ class WebVC: UIViewController, UIWebViewDelegate, WKNavigationDelegate, WKUIDele
         guard let data = pdfDocument!.dataRepresentation() else { return }
         let activityController = UIActivityViewController(activityItems: [data], applicationActivities: nil)
         self.present(activityController, animated: true, completion: nil)
+        shareButton.isEnabled = true
     }
     
 
